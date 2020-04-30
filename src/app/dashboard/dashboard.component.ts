@@ -1,7 +1,5 @@
-import { DashboardService } from './dashboard.service';
-import { Component, OnInit } from '@angular/core';
-import { Observable, observable } from 'rxjs';
-import { log } from 'util';
+ import { Component, OnInit } from '@angular/core';
+ 
 
 @Component({
   selector: 'app-dashboard',
@@ -9,14 +7,14 @@ import { log } from 'util';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-   
+  count=1
   constructor(
-    private dashboard:DashboardService
   ) { }
 
   ngOnInit(){
+    setInterval(function(){this.count+=this.count }, 30);
+     
     }
 
-  
-  
+ 
 }
