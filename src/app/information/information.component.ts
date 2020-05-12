@@ -57,13 +57,14 @@ if (sendJson) {
   console.log('this.informationDetailsForm',this.informationDetailsForm);
 ((this.informationDetailsForm.controls.informationDetails)as FormArray).patchValue(this.tempArray)
 console.log('this.informationDetailsForm15454665454',this.informationDetailsForm);
+this.basciInformation.reset()
+this.addRow()
 
 }
   }
 
   resetForm(){
     this.basciInformation.reset()
-    this.addRow()
   }
  
 

@@ -17,6 +17,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 // import { MatIconModule, MatTableModule, MatToolbarModule, MatMenuModule, MatDialogModule, MatSortModule, MatProgressSpinnerModule, MatPaginatorModule, MatCheckboxModule, MatRippleModule, MatStepperModule, MatExpansionModule, MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonToggleModule, MatChipsModule, MatDividerModule, MatGridListModule, MatListModule, MatProgressBarModule, MatRadioModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatTabsModule, MatTooltipModule, MatTreeModule, MAT_CHECKBOX_CLICK_ACTION, MAT_RIPPLE_GLOBAL_OPTIONS, MatSelectModule } from '@angular/material';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
+import {MatTooltipModule} from '@angular/material/tooltip';
 
  
 
@@ -72,7 +73,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
    // MatSlideToggleModule,
    MatSnackBarModule,
    // MatTabsModule,
-   // MatTooltipModule,
+   MatTooltipModule,
    // MatTreeModule,
    // MatExpansionModule,
   ]
