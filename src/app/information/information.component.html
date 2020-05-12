@@ -1,20 +1,27 @@
 <div class="container-fluid mt-4 mb-3">
+  <div class="card-from mt-2">
+    <div class="card" style="border: 1px solid #45afaf;">
+      <div class="card-header" style="background-color: #45afaf;
+          border: 1px solid #45afaf;">
+        <p class="mb-0" style="font-size: 13px;">Basic Information Details</p>
+      </div>
+      <div class="card-body">
     <form  [formGroup]="basciInformation" class="form"  [style.fontSize.px]="11">
     <div class="row">
 
-<div class="col-lg-3 col-md-4">
+<div class="col-lg-3 col-md-4 col-sm-6">
     <mat-form-field appearance="outline"  class="w-100">
         <mat-label>First Name</mat-label>
         <input matInput placeholder="First Name" formControlName="firstName">
       </mat-form-field>
 </div>
-<div class="col-lg-3 col-md-4">
+<div class="col-lg-3 col-md-4 col-sm-6">
     <mat-form-field appearance="outline"  class="w-100">
         <mat-label>Last Name</mat-label>
         <input matInput placeholder="Last Name" formControlName="lastName">
       </mat-form-field>
 </div>
-<div class="col-lg-3 col-md-4">
+<div class="col-lg-3 col-md-4 col-sm-6">
     <mat-form-field appearance="outline"  class="w-100">
         <mat-label>Birth Date</mat-label>
       <input matInput [matDatepicker]="picker" readonly placeholder="Birth Date" formControlName="birthDate" >
@@ -22,19 +29,19 @@
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 </div>
-<div class="col-lg-3 col-md-4">
+<div class="col-lg-3 col-md-4 col-sm-6">
     <mat-form-field appearance="outline"  class="w-100">
         <mat-label>Gender</mat-label>
         <input matInput placeholder="Gender" formControlName="gender">
       </mat-form-field>
 </div>
-<div class="col-lg-3 col-md-4">
+<div class="col-lg-3 col-md-4 col-sm-6">
     <mat-form-field appearance="outline"  class="w-100">
         <mat-label>Known Language</mat-label>
         <input matInput placeholder="Known Language" formControlName="knownLanguage">
       </mat-form-field>
 </div>
-<div class="col-lg-3 col-md-4">
+<div class="col-lg-3 col-md-4 col-sm-6">
     <mat-form-field appearance="outline"  class="w-100">
         <mat-label>About Your Self</mat-label>
         <textarea matInput formControlName="aboutYourSelf"></textarea>
@@ -48,14 +55,18 @@
     <button  mat-flat-button color="accent" (click)="resetForm()" class="m-3">Reset</button>
 
   </div>
+
 </form>
+</div>
+</div>
+</div>
 
 
 <div class="card-from mt-2">
   <div class="card" style="border: 1px solid #45afaf;">
     <div class="card-header" style="background-color: #45afaf;
         border: 1px solid #45afaf;">
-      <p class="mb-0" style="font-size: 13px;">information Details</p>
+      <p class="mb-0" style="font-size: 13px;">Basic Information Details Table</p>
     </div>
     <div class="card-body">
     <form [formGroup]="informationDetailsForm">
